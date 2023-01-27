@@ -11,6 +11,7 @@ RUN pip install -r requirements.txt
 RUN mkdir /app
 WORKDIR /app
 COPY main.py .
+COPY create-pile-wikipedia .
 COPY .env . 
 RUN echo Done, you are free to enter
 CMD ["sleep", "10000"]
