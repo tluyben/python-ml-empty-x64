@@ -7,11 +7,9 @@ git clone https://github.com/noanabeshima/wikipedia-downloader.git
 cd wikipedia-downloader
 conda create --name wikipedia
 
-echo "The rest of this script doesn't work without interaction; just run it line by line..."
-exit 
-
 conda init
-conda activate wikipedia
+exec bash
 
+conda activate wikipedia
 bash install_requirements.sh
 python main.py
